@@ -6,6 +6,16 @@ This was devolped with python 3.7
 
 If you would like to do object training you will have to upgrade imageai
 
+Precomputed CNN model needed for application (move to same folder as the image_processor.py script)
+
+[YOLOV3](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo.h5)
+
+[RESNET](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
+)
+
+[YOLO-TINY](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo-tiny.h5)
+
+
 #### In command line(windows) terminal(mac)
 navigate into the directory with requirements.txt and run
 
