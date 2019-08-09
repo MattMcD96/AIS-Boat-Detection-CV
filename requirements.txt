@@ -1,0 +1,6 @@
+opencv-python==3.4.2.16
+tensorflow==1.13.1
+keras==2.2.4
+imageai==2.0.3
+numpy==1.16.4
+imageio==2.5.0
