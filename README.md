@@ -56,7 +56,7 @@ gray-normal|     8.17%
 colour-fast |    5.98%
 colour-normal|   7.28% (default)
 
-####MODELS:
+#### MODELS:
 
 MODEL CODES  | Full name| Notes
 ---|---|---
@@ -65,7 +65,7 @@ yl          | yoloTinyV3|
 r           | resnet50 |(default and best for this applications currently )
 
 
-####OBJECTS:
+#### OBJECTS:
 you can change what objects it will exclusively looks for my changing the custom_objects para
 
 **common objects:**
