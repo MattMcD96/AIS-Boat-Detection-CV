@@ -18,12 +18,27 @@ mod: this is for how far around the previous boat detected to look to identify i
 frame scope: how many frames to check previous from current frame to determine if it is the same boat as seen before
 model: pretty much has to be 'y' (yolo) only model that consistently detect boats on water the best
 speed: normal and fast work best changes how it segments the image to make the speed faster 
-'''
 
+for frame rates at .5 fps (frame very 2 seconds) (tested)
 mod = 2.6
 frameScope = 30
 model = 'y'
-speed='normal'
+speed="normal"
+
+for frame rate 1 every 30 seconds (experimental)
+mod = 5
+frameScope = 5
+model = 'y'
+speed="normal"
+
+'''
+
+
+
+mod = 5
+frameScope = 5
+model = 'y'
+speed="normal"
 
 numboats = 0
 boatList = []
@@ -152,7 +167,7 @@ video_path = detector.detectCustomObjectsFromVideo(custom_objects=custom,
                                                                                 inVid),
                                                    output_file_path=os.path.join(execution_path, "video_out")
                                                    , per_frame_function=forFrame, save_detected_video=True,
-                                                   minimum_percentage_probability=40, log_progress=True)
+                                                   minimum_percentage_probability=10, log_progress=True)
 
 print(len(boatList))
 print("--- %s seconds ---" % (time.time() - start_time))
